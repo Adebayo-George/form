@@ -10,9 +10,7 @@ class MyLayout(Widget):
     email_str = StringProperty()
 
     def submit(self):
-        # text_input = self.ids.email_input.text
-        email_input = self.email_str
-        # enter_email = text_input
+        email_input = self.email_str      
         self.ids.update_label.text = f'Email: {email_input}'
 
 class Form(App):
@@ -22,5 +20,3 @@ class Form(App):
 
 if __name__ == "__main__":
     Form().run()
-
-
